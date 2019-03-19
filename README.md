@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the cryptek - Still in progress
 
-Things you may want to cover:
+Getting started - running the app in your local environment.
 
-* Ruby version
+- Create an empty directory and name it whatever you want [myDirectory]. This is a VERY IMPORTANT STEP because our procfile will execute commands based on the file structure of this directory. If you don't do this step exactly, you must modify the procfile to run the server and client according to your structure.
 
-* System dependencies
+-  Within that directory. Git clone this repo.
 
-* Configuration
+- Run bundle install and ensure you are using the same ruby version as I am. You can check it in my gemfile
 
-* Database creation
+- Run rake db:migrate within your terminal to create a database from my models.
 
-* Database initialization
+- Next you will need to cd .. into your [myDirectory]
 
-* How to run the test suite
+- [Cryptek - client] You will need to git clone the front end component of this application. It is react based. After cloning run Yarn install or npm install depending on your preferred package manager. Run yarn/npm start to ensure the client works. Use ctrl + c to close it after your test.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Cd .. back into you [myDirectory] and navigate into cryptek - server.
 
-* Deployment instructions
+- Ensure you have foreman installed. Run the following command: foreman start -p 3001.
 
-* ...
+- You should now be on localhost 3001 with both client and server running.
